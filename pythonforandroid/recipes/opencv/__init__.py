@@ -54,6 +54,7 @@ class OpenCVRecipe(NDKRecipe):
             opencv_extras = [
                 f'-DOPENCV_EXTRA_MODULES_PATH={opencv_extras_dir}/modules',
                 '-DBUILD_opencv_legacy=OFF',
+                '-DBUILD_opencv_dnn=OFF'
             ]
 
         with current_directory(build_dir):
